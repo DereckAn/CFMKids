@@ -24,8 +24,10 @@ class _ChangeSizeState extends State<ChangeSize> {
               setState(() {
                 if (index == 0) {
                   _isExpanded1 = !isExpanded;
+                  _isExpanded2 = false;
                 } else if (index == 1) {
                   _isExpanded2 = !isExpanded;
+                  _isExpanded1 = false;
                 }
               });
             },
