@@ -1,6 +1,6 @@
-import 'package:cfmkids/main.dart';
+// import 'package:cfmkids/main.dart';
 import 'package:flutter/material.dart';
-import 'package:cfmkids/screens/settings.dart';
+// import 'package:cfmkids/screens/settings.dart';
 
 import 'login.dart';
 
@@ -14,7 +14,7 @@ class MainPage extends MaterialPageRoute<void> {
               title: const Text('Main Page'),
               actions: <Widget>[
                 PopupMenuButton<String>(
-                  icon: Icon(Icons.more_vert),
+                  icon: const Icon(Icons.more_vert),
                   onSelected: (value) => handleClick(value, mainContext),
                   itemBuilder: (BuildContext context) {
                     return {'Logout', 'Settings', 'Print'}.map((String choice) {
